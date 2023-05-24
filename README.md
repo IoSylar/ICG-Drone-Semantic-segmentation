@@ -7,9 +7,10 @@ Dataset: https://www.kaggle.com/datasets/bulentsiyah/semantic-drone-dataset
 # Goal
 The goal is to assign a label, a numerical value, to each pixel of the image in order to identify sets of pixels that belong to a specific category or class.
 
-#Preprocessing
+# Preprocessing
 - Each image was cropped into 24 patches.
-  
+- 
+  ![Screenshot](images/Preoprocessing.PNG)
   
 # Models and settings used
 - PSPNet: https://arxiv.org/abs/1612.01105 
