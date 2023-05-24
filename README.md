@@ -3,22 +3,22 @@ Using fully convolutional models for solving a semantic segmentation task on the
 # Goal
 The goal is to assign a label, a numerical value, to each pixel of the image in order to identify sets of pixels that belong to a specific category or class.
 # Models and settings used
-- PSPNet: https://arxiv.org/abs/1612.01105 using ResNext50 as backbone.
+- PSPNet: https://arxiv.org/abs/1612.01105 
           Backbone: ResNext50
           Loss function: Categorical Cross Entropy + Jaccard Loss
           Optimizer: SGD (Stocastic Gradient Descent)
-- Unet: https://arxiv.org/abs/1505.04597  using Resnet 152 as backbone.
+- Unet: https://arxiv.org/abs/1505.04597
          Backbone: Resnet 152
          Loss function: Weighted categorical cross entropy 
          Optimizer: Adam
          L2 Regulatization: 4e-4
          α: 0.17
-- Linknet: https://arxiv.org/pdf/1707.03718.pdf using MobileNet backbone.
+- Linknet: https://arxiv.org/pdf/1707.03718.pdf
           Backbone: MobileNet
           Loss function: Categorical Crossentropy + Jaccard Loss
           Optimizer: SGD
           Kernel Regulatization: 10-5
-- FPN :https://arxiv.org/abs/1612.03144 using VGG16
+- FPN :https://arxiv.org/abs/1612.03144 
       Backbone: VGG16
       Loss function: Categorical Cross Entropy
       Optimizer: Adam
