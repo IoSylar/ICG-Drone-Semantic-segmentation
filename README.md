@@ -36,7 +36,8 @@ The goal is to assign a label, a numerical value, to each pixel of the image in 
 All the backbones are pretrained on ImageNet.
 Metrics: Accuracy and mIoU
 # Weights Optimization
-  Weights are assigned to each class, making the error resulting from incorrect segmentation of minority classes more significant.
+  Weights are assigned to each class, making the error resulting from incorrect segmentation of minority classes more significant.     
+  
   ![Screenshot](images/WeightedLoss.PNG)
  
    α: necessary to normalize and modulate the distance between the weights associated with the classes.
