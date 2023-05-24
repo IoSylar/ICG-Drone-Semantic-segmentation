@@ -1,4 +1,4 @@
-# ICG-Drone-Semantic-segmentation
+# ICG-Drone-Semantic-Segmentation
 Using fully convolutional models for solving a semantic segmentation task on the Aerial Semantic Segmentation drone dataset.
 # Goal
 The goal is to assign a label, a numerical value, to each pixel of the image in order to identify sets of pixels that belong to a specific category or class.
