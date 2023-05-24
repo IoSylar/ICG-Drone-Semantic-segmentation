@@ -12,6 +12,7 @@ The goal is to assign a label, a numerical value, to each pixel of the image in 
          Loss function: Weighted categorical cross entropy 
          Optimizer: Adam
          L2 Regulatization: 4e-4
+         α: 0.17
 - Linknet: https://arxiv.org/pdf/1707.03718.pdf using MobileNet backbone.
           Backbone: MobileNet
           Loss function: Categorical Crossentropy + Jaccard Loss
@@ -23,6 +24,9 @@ The goal is to assign a label, a numerical value, to each pixel of the image in 
       Optimizer: Adam
       Dropout: 0.3
 All the backbones are pretrained on ImageNet.
+# Weights Optimization
+  Weights are assigned to each class, making the error resulting from incorrect segmentation of minority classes more significant.
+   α: necessary to normalize and modulate the distance between the weights associated with the classes.
 # Fully convolutional ensemble
   We made the decision to create an ensemble model by combining the Linknet, PSPNET, and Unet models. To enhance the performance of our ensemble, we utilized two different ensemble mechanisms.
   - Hard voting: involves determining the label for each pixel through a majority voting scheme. By considering the predictions of all three models, we can assign the label that receives the most votes as the      final prediction for each pixel.
