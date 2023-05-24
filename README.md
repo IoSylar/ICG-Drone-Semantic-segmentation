@@ -9,7 +9,7 @@ The goal is to assign a label, a numerical value, to each pixel of the image in 
 
 # Preprocessing
 - Each image was cropped into 24 patches.
-- 
+
   ![Screenshot](images/Preoprocessing.PNG)
   
 # Models and settings used
